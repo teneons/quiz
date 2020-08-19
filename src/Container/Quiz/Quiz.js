@@ -11,7 +11,7 @@ export default class Quiz extends Component {
     render() {
         return(
             <div className={'Quiz'}>
-                <span className={'TxtHeader'}>Quiz App</span>
+                <span className={'TxtHeader'}>Quiz</span>
                 <QuizBox />
             </div>
         )
