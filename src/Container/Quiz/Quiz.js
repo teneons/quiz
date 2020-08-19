@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 import './Quiz.scss'
-import QuizNow from '../Components/QuizNow/QuizNow'
+import QuizBox from '../Components/QuizBox/QuizBox'
 
 export default class Quiz extends Component {
     state = {
@@ -12,7 +12,7 @@ export default class Quiz extends Component {
         return(
             <div className={'Quiz'}>
                 <span className={'TxtHeader'}>Quiz App</span>
-                <QuizNow />
+                <QuizBox />
             </div>
         )
     }

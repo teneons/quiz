@@ -1,11 +1,11 @@
 import React from 'react'
 
-import './QuizNow.scss'
+import './QuizBox.scss'
 
 const QuizNow = props => {
 
 
-    return(<div className={'QuizNow'}>
+    return(<div className={'QuizBox'}>
         <div className={'HeaderTxtQuiz'}>
             <span>Whats app?</span>
             <span>2/10</span>
