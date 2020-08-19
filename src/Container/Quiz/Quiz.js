@@ -5,8 +5,8 @@ import './Quiz.scss'
 export default class Quiz extends Component {
     render() {
         return(
-            <div>
-                
+            <div className={'Quiz'}>
+                Quiz #42
             </div>
         )
     }
