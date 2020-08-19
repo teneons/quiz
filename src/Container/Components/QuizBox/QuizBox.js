@@ -10,7 +10,7 @@ const QuizNow = props => {
             <span>Whats app?</span>
             <span>2/10</span>
         </div>
-        <ul>
+        <ul className={'QuizAnswers'}>
             <li>A</li>
             <li>B</li>
             <li>C</li>
