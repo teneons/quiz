@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+.QuizNow {
+    width: 55vw;
+    border: 1.5px solid #f1f1f1;
+    border-bottom: none;
+    color: #fff;
+    font-size: 4vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.HeaderTxtQuiz {
+    display: flex;
+    justify-content: space-between;
+}

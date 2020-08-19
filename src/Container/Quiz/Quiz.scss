@@ -3,10 +3,17 @@
 .Quiz {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    color: #fff;
-    background-color: cornflowerblue;
-    font-size: 10vh;
+    align-items: center;
+    background-color: #7b2b94;
+}
+
+.TxtHeader {
+    margin: 5vh 0 5vh 0;
+    text-transform: uppercase;
+    color: #ffe107;
+    font-size: 8vh;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-weight: 300;
 }
