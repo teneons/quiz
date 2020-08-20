@@ -13,8 +13,10 @@ export default class Quiz extends Component {
     }
 
 
-    checkRightAnswer = (answerId) => {
-        console.log('Answer key -', answerId)
+    checkRightAnswer = (answerId, indexLi) => {
+        if(this.state.quiz[answerId].rightAsnwer === indexLi) {
+            console.log(true)
+        } else console.log(false)
     }
 
 
@@ -25,7 +27,7 @@ export default class Quiz extends Component {
                 {this.state.quiz.map((item)=>{
                     return(
                         <QuizBox key={item.id}
-                            id={item.id +1} 
+                            id={item.id} 
                             txtHeader={item.txtHeader}
                             txtAnswer={item.txtAnswer}
                             rightAsnwer={item.rightAsnwer}
