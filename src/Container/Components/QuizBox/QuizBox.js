@@ -4,13 +4,21 @@ import './QuizBox.scss'
 
 
 export default class QuizBox extends Component {
-
-    checkLi = (idLi) => {
-        //console.log(`checkLi`)
+    state = {
+        clssName: ''
     }
-    
 
+    
     render() {
+
+        let styleLi = {}
+
+        let checkRightAnswer = (index) => {
+            if(index === this.props.rightAsnwer) {
+                this.setState({clssName: 'Green'})
+            } else this.setState({clssName: 'Orange'});
+        }
+
         return(
         <div className={'QuizBox'}>
         <div className={'HeaderTxtQuiz'}>
@@ -20,7 +28,11 @@ export default class QuizBox extends Component {
         <ul className={'QuizAnswers'}>
             {this.props.txtAnswer.map((item, index)=>{
                 return(
-                    <li onClick={()=>this.props.checkRightAnswer(this.props.id, index)} idLi={index}>{item}</li>
+                    <li onClick={()=> checkRightAnswer(index)}
+                        key={index}
+                        className={this.state.clssName}
+                        style={styleLi}
+                        >{item}</li>
                 )
             })}
         </ul>

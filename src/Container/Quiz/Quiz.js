@@ -12,15 +12,8 @@ export default class Quiz extends Component {
                 {id: 4, txtHeader: 'Quiz 5?', txtAnswer: ['E1', 'E2', 'E3'], rightAsnwer: 1}]
     }
 
-
-    checkRightAnswer = (answerId, indexLi) => {
-        if(this.state.quiz[answerId].rightAsnwer === indexLi) {
-            console.log(true)
-        } else console.log(false)
-    }
-
-
     render() {
+
         return(
             <div className={'Quiz'}>
                 <span className={'TxtHeader'}>Quiz</span>
@@ -31,8 +24,7 @@ export default class Quiz extends Component {
                             txtHeader={item.txtHeader}
                             txtAnswer={item.txtAnswer}
                             rightAsnwer={item.rightAsnwer}
-                            numberAllQuiz={this.state.quiz.length}
-                            checkRightAnswer={this.checkRightAnswer} />
+                            numberAllQuiz={this.state.quiz.length} />
                     )
                 })}
             </div>
